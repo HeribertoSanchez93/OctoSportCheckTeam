@@ -16,7 +16,7 @@ public class ServiceTeam implements IRepositoryTeam {
 
     @Override
     public TeamDto getTeam(Long id) {
-        return null;
+        return repositoryTeam.findByIdTeam(id);
     }
 
     @Override

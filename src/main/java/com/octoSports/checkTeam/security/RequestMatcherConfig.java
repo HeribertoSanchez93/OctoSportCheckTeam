@@ -17,7 +17,7 @@ public class RequestMatcherConfig implements RequestMatcher {
 
     private final List<AntPathRequestMatcher> requestMatchers = List.of(
             new AntPathRequestMatcher("/teams/allTeams"),
-            new AntPathRequestMatcher("/cliente/verClientes"));
+            new AntPathRequestMatcher("/teams/team/getById/*"));
 
     @Override
     public boolean matches(HttpServletRequest request) {
